@@ -33,6 +33,12 @@ class User_model extends CI_Model {
 		return $query->row_array();
 	}
 
+	public function get_user_by_mail($mail)
+	{
+		$query = $this->db->get_where('user', array('email' => $mail));
+		return $query->row_array();
+	}
+
 	public function get_user_by_fbid($facebook_id)
 	{
 		$query = $this->db->get_where('user', array('facebook_id' => $facebook_id));

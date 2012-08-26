@@ -22,7 +22,7 @@
 
 </form>
 <div id="login_facebook">
-  <a href='/facebook_login'>
-    <img src="/images/buttons/fb-connect-large.png" />
+  <a href='<?=site_url("/facebook_login")?>'>
+    <img src="<?=site_url("images/buttons/fb-connect-large.png")?>" />
   </a>
 </div>
