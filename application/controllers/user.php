@@ -148,7 +148,7 @@ class User extends CI_Controller {
     } else {
       $data['login_url'] = $this->facebook->getLoginUrl(array(
 				'scope'		=> 'email,user_birthday',
-				'redirect_uri'	=> current_url()
+				'redirect_uri'	=> site_url("facebook_login")
 			));
 			redirect($data['login_url']);
     }
