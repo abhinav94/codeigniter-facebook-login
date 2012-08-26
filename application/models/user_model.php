@@ -1,17 +1,17 @@
 <?php
 /*
  *
- *
 		CREATE TABLE `user` (
 		  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
 		  `username` varchar(50) NOT NULL DEFAULT '',
-		  `password` varchar(50) NOT NULL DEFAULT '',
+		  `password` varchar(50) DEFAULT NULL,
 		  `name` varchar(50) NOT NULL DEFAULT '',
 		  `email` varchar(100) NOT NULL DEFAULT '',
+		  `facebook_id` int(15) DEFAULT NULL,
 		  PRIMARY KEY (`id`),
 		  UNIQUE KEY `username` (`username`),
 		  UNIQUE KEY `email` (`email`)
-		) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+		) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
  *
  */
 class User_model extends CI_Model {

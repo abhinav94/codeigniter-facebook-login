@@ -19,7 +19,7 @@
 	<body>
     <header>
       <div class="header-content">
-        contenido de prueba :)
+        Facebook login with codeigniter
       </div>
     </header>
     <div class="container">
